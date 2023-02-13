@@ -1,0 +1,35 @@
+.menu-button {
+    align-self: flex-end;
+    position: relative;
+    height: 42px;
+    width: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all .5s ease;
+    overflow: hidden;
+    &:hover {
+        transform: scale(1.2);
+    }
+    &__item {
+        height: 2px;
+        width: 100%;
+        background-color: $greyColor;
+        transition: all .5s ease;
+        &:nth-child(2) {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        &:nth-child(3) {
+            position: relative;
+            z-index: 2;
+        }
+    }
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/img/favicon/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <!-- style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1 class="visually-hidden">CV Portfolio Frontend developer</h1>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <h2 class="visually-hidden">CV Portfolio Frontend developer</h2>
+                <button class="menu-button">
+                    <span class="menu-button__item"></span>
+                    <span class="menu-button__item"></span>
+                    <span class="menu-button__item"></span>
+                    <span class="menu-button__item"></span>
+                </button>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#about">
+                            about
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#works">
+                            works
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contacts">
+                            contacts
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="about" id="about">
+            <div class="container">
+                <picture class="about__photo">
+                    <source media="(min-resolution: 1dppx)" srcset="./img/about/about.webp">
+                    <source media="(min-resolution: 2dppx)" srcset="./img/about/about@2x.webp">
+                    <source media="(min-resolution: 3dppx)" srcset="./img/about/about@3x.webp">
+                    <img src="./img/about/about.jpg" alt="my photo" width="1232" height="816">
+                </picture>
+                <div class="about__content">
+                    <h3 class="about__title">About me</h3>
+                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut necessitatibus dicta voluptatem nobis optio molestiae fugit a iure non unde. Quia laborum nobis, animi veritatis fugit tempore doloremque numquam odit!</p>
+                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut necessitatibus dicta voluptatem nobis optio molestiae fugit a iure non unde. Quia laborum nobis, animi veritatis fugit tempore doloremque numquam odit!</p>
+                    <a class="about__cv-link">
+                        My CV here
+                        <svg width="170" height="50" viewBox="0 0 170 50" xmlns="http://www.w3.org/2000/svg">
+                            <rect x='0' y='0' fill="none" width='170' height="50"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="about__arrow">
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                </div>
+            </div>
+        </section>
+        <section class="works" id="works">
+            <div class="container">
+                <h3 class="works__title title">My works</h3>
+                <ul class="works__list">
+                    <li class="card">
+                        <!-- <h4 class="card__title">mountain</h4> -->
+                        <picture class="card__image">
+                            <source media="(min-resolution: 1dppx)" srcset="./img/works/mountain.webp">
+                            <source media="(min-resolution: 2dppx)" srcset="./img/works/mountain@2x.webp">
+                            <img src="./img/works/mountain.jpg" alt="project mountain" width="375" height="500">
+                        </picture>
+                        <a class="card__link" href="https://kovarnar.github.io/mountain/#" target="_blank">View</a>
+                    </li>
+                    <li class="card">
+                        <!-- <h4 class="card__title">productly</h4> -->
+                        <picture class="card__image">
+                            <source media="(min-resolution: 1dppx)" srcset="./img/works/productly.webp">
+                            <source media="(min-resolution: 2dppx)" srcset="./img/works/productly@2x.webp">
+                            <img src="./img/works/productly.jpg" alt="project productly" width="375" height="500">
+                        </picture>
+                        <a class="card__link" href="https://kovarnar.github.io/Productly/" target="_blank">View</a>
+                    </li>
+                    <li class="card">
+                        <!-- <h4 class="card__title">bhromaon</h4> -->
+                        <picture class="card__image">
+                            <source media="(min-resolution: 1dppx)" srcset="./img/works/bhromaon.webp">
+                            <source media="(min-resolution: 2dppx)" srcset="./img/works/bhromaon@2x.webp">
+                            <img src="./img/works/bhromaon.jpg" alt="project bhromaon" width="375" height="500">
+                        </picture>
+                        <a class="card__link" href="https://kovarnar.github.io/bhromaon/" target="_blank">View</a>
+                    </li>
+                    <li class="card">
+                        <!-- <h4 class="card__title">Manifest</h4> -->
+                        <picture class="card__image">
+                            <source media="(min-resolution: 1dppx)" srcset="./img/works/manifest.webp">
+                            <source media="(min-resolution: 2dppx)" srcset="./img/works/manifest@2x.webp">
+                            <img src="./img/works/manifest.jpg" alt="project manifest" width="375" height="500">
+                        </picture>
+                        <a class="card__link" href="https://kovarnar.github.io/Manifest/" target="_blank">View</a>
+                    </li>
+                    <li class="card">
+                        <!-- <h4 class="card__title">montichello</h4> -->
+                        <picture class="card__image">
+                            <source media="(min-resolution: 1dppx)" srcset="./img/works/montichello.webp">
+                            <source media="(min-resolution: 2dppx)" srcset="./img/works/montichello@2x.webp">
+                            <img src="./img/works/montichello.jpg" alt="project montichello" width="375" height="500">
+                        </picture>
+                        <a class="card__link" href="https://kovarnar.github.io/Montichello/" target="_blank">View</a>
+                    </li>
+                    <li class="card">
+                        <!-- <h4 class="card__title">mountain</h4> -->
+                        <picture class="card__image">
+                            <source media="(min-resolution: 1dppx)" srcset="./img/works/casestudy.webp">
+                            <source media="(min-resolution: 2dppx)" srcset="./img/works/casestudy@2x.webp">
+                            <img src="./img/works/casestudy.jpg" alt="project casestudy" width="375" height="500">
+                        </picture>
+                        <a class="card__link" href="https://kovarnar.github.io/CaseStudy/" target="_blank">View</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <span class="">Got any questions? I'm happy to help</span>
+                <h3 class="contacts__title title">Contact me</h3>
+                <div class="contact__wrapper">
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <a class="contacts__item-link" href="tel:+380662990555">
+                                <svg class="icon icon--phone">
+                                    <use xlink:href="./img/sprite.svg#phone"></use>
+                                </svg>
+                                +38(066)299-05-55
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__item-link" href="mailto:sidorova.mariia@gmail.com">
+                                <svg class="icon icon--email">
+                                    <use xlink:href="./img/sprite.svg#envelope"></use>
+                                </svg>
+                                sidorova.mariia@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="contacts__social">
+                        <li class="contacts__social-item">
+                            <a class="contacts__social-link" href="https://www.linkedin.com/in/mariia-shmatok/" aria-label="linkedin" target="_blank">
+                                <svg class="icon icon--linkedin">
+                                    <use xlink:href="./img/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="contacts__social-item">
+                            <a class="contacts__social-link" href="https://github.com/Kovarnar" aria-label="GitHub" target="_blank">
+                                <svg class="icon icon--github">
+                                    <use xlink:href="./img/sprite.svg#github"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="contacts__social-item">
+                            <a class="contacts__social-link" href="viber://chat?number=%2B380662990555" aria-label="viber" target="_blank">
+                                <svg class="icon icon--viber">
+                                    <use xlink:href="./img/sprite.svg#viber"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="contacts__social-item">
+                            <a class="contacts__social-link" href="https://telegram.me/mariiashmatok" aria-label="telegram" target="_blank">
+                                <svg class="icon icon--telegram">
+                                    <use xlink:href="./img/sprite.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                © Mariia Shmatok <span>2023</span>
+            </p>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

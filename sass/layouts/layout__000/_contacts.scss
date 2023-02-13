@@ -1,0 +1,75 @@
+.contacts{
+    background-image: linear-gradient(rgba($greyColor, 0.9), rgba($greyColor, 0.9)), url('../img/contacts/bg.svg') ;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    
+    padding: 50px 0;
+    color: $darkBlueColor;
+
+    &__title{}
+
+    .icon {
+        fill: $darkBlueColor;
+        transition: fill .5s ease;
+    }
+
+    &__list{
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__item{
+        .icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__item-link{
+        display: inline-flex;
+        gap: 10px;
+        align-items: center;
+        font-size: rem(14px);
+        &:hover, &:focus {
+            .icon--email{
+                fill: #F5DF4D;
+            }
+            .icon--phone{
+                fill: #26db85;
+            }
+        }
+    }
+
+    &__social{
+        @include center;
+        gap: 20px;
+
+    }
+
+    &__social-item{
+        .icon {
+            width: 40px;
+            height: 40px;
+        }
+        &:hover, &:focus{
+            .icon--github{
+                fill: $blackColor;
+            }
+            .icon--linkedin{
+                fill: #3366CC ;
+            }
+            .icon--viber{
+                fill: #8f5db7;
+            }
+            .icon--telegram{
+                fill: #0088cc;
+            }
+        }
+    }
+
+    &__social-link{
+    }
+}

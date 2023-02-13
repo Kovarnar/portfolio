@@ -1,0 +1,56 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__image {
+        overflow: hidden;
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+    }
+
+    &__link {
+        position: relative;
+        padding: 10px 50px;
+        width: fit-content;
+        align-self: center;
+        background-color: rgba($color: $yellowColor, $alpha: 0.7);
+        border-radius: 1px;
+        color: $darkBlueColor;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        overflow: hidden;
+        transition: transform .5s ease;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -25%;
+            width: 3px;
+            height: 100%;
+            background-color: rgba($color: $whiteColor, $alpha: 0.5);
+            box-shadow: 0 0 5px $whiteColor;
+            transform: skewX(-45deg);
+        }
+        &:hover{
+            &::before{
+                animation: move 1s;
+            }
+        }
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+}
+
+@keyframes move{
+    0% {
+        left: -25%;
+    }
+    100% {
+        left: 125%;
+    }
+}

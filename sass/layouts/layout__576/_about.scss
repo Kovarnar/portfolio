@@ -1,0 +1,19 @@
+.about {
+    padding: 130px 0    50px;
+    .container {
+        row-gap: 30px;
+    }
+    &__content {
+        min-height: calc(100vh - 180px - 45px);
+    }
+    &__title{
+        margin-bottom: 50px;
+    }
+    &__text{
+        width: 60%;
+        font-size: rem(16px);
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+}
