@@ -1,20 +1,6 @@
 .contacts{
     padding: 75px 0;
-
-    // &__list{
-    //     flex-direction: unset;
-    //     justify-content: space-evenly;
-    // }
-
-
     &__item-link{
-    //     display: inline-flex;
-    //     gap: 10px;
-    //     align-items: center;
         font-size: rem(16px);
     }
-
-    // &__social{
-    //     gap: 30px;
-    // }
 }

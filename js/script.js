@@ -25,5 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
             behavior: 'smooth'
         });
     });
+
+    const date = new Date();
+    const currentYear = date.getFullYear();
+
+    document.getElementById("currentYear").innerHTML = currentYear;
 });
 

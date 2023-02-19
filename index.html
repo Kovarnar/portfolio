@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio Frontend developer</title>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Portfolio Frontend developer">
+    <meta name="description" content="I'm Mariia, a curious and passionate junior frontend developer with a hunger for learning and a desire to create beautiful, intuitive web applications">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kovarnar.github.io/portfolio/">
+    <meta property="og:title" content="Portfolio Frontend developer">
+    <meta property="og:description" content="I'm Mariia, a curious and passionate junior frontend developer with a hunger for learning and a desire to create beautiful, intuitive web applications">
+    <meta property="og:image" content="https://github.com/Kovarnar/portfolio/blob/master/img/about/about.webp">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kovarnar.github.io/portfolio/">
+    <meta property="twitter:title" content="Portfolio Frontend developer">
+    <meta property="twitter:description" content="I'm Mariia, a curious and passionate junior frontend developer with a hunger for learning and a desire to create beautiful, intuitive web applications">
+    <meta property="twitter:image" content="https://github.com/Kovarnar/portfolio/blob/master/img/about/about.webp">
     <!-- favicon -->
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="/img/favicon/icon.svg" type="image/svg+xml">
@@ -52,21 +67,21 @@
         <section class="about" id="about">
             <div class="container">
                 <picture class="about__photo">
-                    <source media="(min-resolution: 1dppx)" srcset="./img/about/about.webp">
-                    <source media="(min-resolution: 2dppx)" srcset="./img/about/about@2x.webp">
-                    <source media="(min-resolution: 3dppx)" srcset="./img/about/about@3x.webp">
+                    <source media="(max-width: 575.999px)" srcset="./img/about/about-bg.webp">
+                    <source media="(min-width: 576px) and (min-resolution: 1dppx) " srcset="./img/about/about.webp">
+                    <source media="(min-width: 576px) and (min-resolution: 2dppx)" srcset="./img/about/about@2x.webp">
+                    <source media="(min-width: 576px) and (min-resolution: 3dppx)" srcset="./img/about/about@3x.webp">
                     <img src="./img/about/about.jpg" alt="my photo" width="1232" height="816">
                 </picture>
                 <div class="about__content">
                     <h3 class="about__title">About me</h3>
-                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut necessitatibus dicta voluptatem nobis optio molestiae fugit a iure non unde. Quia laborum nobis, animi veritatis fugit tempore doloremque numquam odit!</p>
-                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut necessitatibus dicta voluptatem nobis optio molestiae fugit a iure non unde. Quia laborum nobis, animi veritatis fugit tempore doloremque numquam odit!</p>
-                    <a class="about__cv-link">
+                    <p class="about__text">Hello! I'm Mariia Shmatok, a curious and passionate junior frontend developer with a hunger for learning and a desire to create beautiful, intuitive web applications. My journey into the world of frontend development began last year. Since then, I have continued to develop my skills and explore new technologies, including JavaScript and React.js. I love the challenge of taking complex ideas and turning them into simple, elegant designs that users can easily navigate and enjoy. As a lifelong learner, I am always on the lookout for new techniques and tools that can help me improve my craft. I am excited to embark on this new career path and look forward to collaborating with others to create amazing web experiences that make a difference in people's lives</p>
+                    <!-- <a class="about__cv-link">
                         My CV here
                         <svg width="170" height="50" viewBox="0 0 170 50" xmlns="http://www.w3.org/2000/svg">
                             <rect x='0' y='0' fill="none" width='170' height="50"/>
                         </svg>
-                    </a>
+                    </a> -->
                 </div>
                 <div class="about__arrow">
                     <div class="chevron"></div>
@@ -138,9 +153,8 @@
         </section>
         <section class="contacts" id="contacts">
             <div class="container">
-                <span class="">Got any questions? I'm happy to help</span>
                 <h3 class="contacts__title title">Contact me</h3>
-                <div class="contact__wrapper">
+                <div class="contacts__wrapper">
                     <ul class="contacts__list">
                         <li class="contacts__item">
                             <a class="contacts__item-link" href="tel:+380662990555">
@@ -190,14 +204,13 @@
                         </li>
                     </ul>
                 </div>
-                
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
             <p class="footer__text">
-                © Mariia Shmatok <span>2023</span>
+                © Mariia Shmatok <span id="currentYear"></span>
             </p>
         </div>
     </footer>

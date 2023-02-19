@@ -37,9 +37,9 @@
         font-weight: 500;
     }
     &__text{
-        width: 90%;
         font-size: rem(14px);
         line-height: 1.75;
+        text-align: justify;
         &:not(:last-child) {
             margin-bottom: 10px;
         }

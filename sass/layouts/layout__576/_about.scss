@@ -12,6 +12,8 @@
     &__text{
         width: 60%;
         font-size: rem(16px);
+        text-align: unset;
+        letter-spacing: 0.05rem;
         &:not(:last-child) {
             margin-bottom: 15px;
         }
