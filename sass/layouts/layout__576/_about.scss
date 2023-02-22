@@ -1,10 +1,10 @@
 .about {
-    padding: 130px 0    50px;
+    padding: 130px 0 30px;
     .container {
         row-gap: 30px;
     }
     &__content {
-        min-height: calc(100vh - 180px - 45px);
+        min-height: calc(100vh - 160px - 45px - 30px);
     }
     &__title{
         margin-bottom: 50px;

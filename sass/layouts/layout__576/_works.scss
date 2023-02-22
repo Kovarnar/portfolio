@@ -1,12 +1,9 @@
 .works{
     padding: 75px 0;
-
     &__title {
         margin-bottom: 50px;
     }
-
     &__list {
         grid-template-columns: 1fr 1fr;
-        gap: 50px 30px;
     }
 }

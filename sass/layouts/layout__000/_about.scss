@@ -1,6 +1,6 @@
 .about {
     position: relative;
-    padding: 100px 0 50px;
+    padding: 100px 0 30px;
     min-height: 100vh;
     max-height: fit-content;
 
@@ -29,7 +29,7 @@
     }
     &__content {
         color: $greyColor;
-        min-height: calc(100vh - 150px - 45px);
+        min-height: calc(100vh - 130px - 45px - 20px);
     }
     &__title{
         margin-bottom: 30px;

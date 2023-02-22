@@ -1,11 +1,9 @@
 .menu{
     display: flex;
     flex-direction: unset;
-    // justify-content: center;
     gap: 75px;
     left: 0;
     opacity: 1;
-
     &__link{
         font-size: rem(16px);
     }

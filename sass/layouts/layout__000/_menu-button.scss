@@ -12,9 +12,6 @@
     cursor: pointer;
     transition: all .5s ease;
     overflow: hidden;
-    &:hover {
-        transform: scale(1.2);
-    }
     &__item {
         height: 2px;
         width: 100%;

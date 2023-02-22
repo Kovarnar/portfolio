@@ -184,10 +184,22 @@ body {
   transition: left 0.5s ease;
 }
 .menu__item {
+  position: relative;
   transition: all 0.5s ease;
 }
-.menu__item:hover {
-  transform: scale(1.2);
+.menu__item::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  opacity: 0.7;
+  position: absolute;
+  bottom: -3px;
+  left: 25%;
+  transition: all 0.5s ease;
+}
+.menu__item:hover::after {
+  background: linear-gradient(96.73deg, #fff 10%, transparent 100%);
+  left: 0;
 }
 .menu__link {
   font-size: 1.5rem;
@@ -212,9 +224,6 @@ body {
   transition: all 0.5s ease;
   overflow: hidden;
 }
-.menu-button:hover {
-  transform: scale(1.2);
-}
 .menu-button__item {
   height: 2px;
   width: 100%;
@@ -235,7 +244,7 @@ body {
 
 .about {
   position: relative;
-  padding: 100px 0 50px;
+  padding: 100px 0 30px;
   min-height: 100vh;
   max-height: fit-content;
 }
@@ -263,7 +272,7 @@ body {
 }
 .about__content {
   color: #e5e5e5;
-  min-height: calc(100vh - 150px - 45px);
+  min-height: calc(100vh - 130px - 45px - 20px);
 }
 .about__title {
   margin-bottom: 30px;
@@ -363,7 +372,8 @@ body {
 
 .works {
   padding: 50px 0;
-  background-color: rgba(252, 163, 17, 0.15);
+  background: rgb(238, 174, 202);
+  background: linear-gradient(46deg, rgba(238, 174, 202, 0.7680322129) 30%, rgba(241, 238, 6, 0.3842787115) 70%);
 }
 .works__title {
   margin-bottom: 30px;
@@ -376,9 +386,8 @@ body {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  position: relative;
+  transition: transform 0.3s ease;
 }
 .card__image {
   overflow: hidden;
@@ -388,15 +397,29 @@ body {
   object-fit: cover;
   object-position: center top;
 }
+.card__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  transition: transform 0.5s ease;
+}
 .card__link {
   position: relative;
-  padding: 10px 50px;
-  width: fit-content;
-  align-self: center;
-  background-color: rgba(252, 163, 17, 0.7);
-  border-radius: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(238, 174, 202, 0.8);
   color: #14213d;
-  font-weight: 600;
+  font-size: 1.125rem;
+  font-weight: 700;
   letter-spacing: 0.1rem;
   overflow: hidden;
   transition: transform 0.5s ease;
@@ -413,10 +436,13 @@ body {
   transform: skewX(-45deg);
 }
 .card__link:hover::before {
-  animation: move 1s;
+  animation: move 0.7s;
 }
-.card__link:active {
-  transform: scale(0.9);
+.card:hover .card__btn {
+  transform: translate(-50%, -50%) scale(1);
+}
+.card:active .card__btn {
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 @keyframes move {
@@ -527,13 +553,13 @@ body {
     display: none;
   }
   .about {
-    padding: 130px 0 50px;
+    padding: 130px 0 30px;
   }
   .about .container {
     row-gap: 30px;
   }
   .about__content {
-    min-height: calc(100vh - 180px - 45px);
+    min-height: calc(100vh - 160px - 45px - 30px);
   }
   .about__title {
     margin-bottom: 50px;
@@ -555,7 +581,6 @@ body {
   }
   .works__list {
     grid-template-columns: 1fr 1fr;
-    gap: 50px 30px;
   }
   .contacts {
     padding: 75px 0;
@@ -565,6 +590,13 @@ body {
   }
 }
 @media only screen and (min-width: 768px) {
+  .title {
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+  }
+  .about__title {
+    font-size: 4rem;
+  }
   .about__text {
     width: 55%;
   }
@@ -581,15 +613,41 @@ body {
   }
 }
 @media only screen and (min-width: 1024px) {
+  .menu {
+    gap: 150px;
+  }
+  .menu__link {
+    font-size: 1.125rem;
+  }
   .contacts__wrapper {
     width: 800px;
     margin: 0 auto;
   }
 }
 @media only screen and (min-width: 1200px) {
+  .title {
+    font-size: 4rem;
+    margin-bottom: 50px;
+  }
+  .about__title {
+    font-size: 4.5rem;
+  }
+  .about__text {
+    width: 60%;
+  }
+  .works {
+    padding: 125px 0;
+  }
   .contacts {
     padding: 125px 0;
+    background-image: linear-gradient(rgba(229, 229, 229, 0.9), rgba(229, 229, 229, 0.9)), url("../img/contacts/bg2.svg");
     background-position: center center;
+  }
+  .footer {
+    padding: 40px 0;
+  }
+  .footer__text {
+    font-size: 0.875rem;
   }
 }
 

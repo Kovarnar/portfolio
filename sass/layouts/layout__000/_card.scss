@@ -1,8 +1,6 @@
 .card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
+    position: relative;
+    transition: transform .3s ease;
     &__image {
         overflow: hidden;
         img {
@@ -11,16 +9,27 @@
             object-position: center top;
         }
     }
-
+    &__btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        border-radius: 50%;
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+        transition: transform .5s ease;
+    }
     &__link {
         position: relative;
-        padding: 10px 50px;
-        width: fit-content;
-        align-self: center;
-        background-color: rgba($color: $yellowColor, $alpha: 0.7);
-        border-radius: 1px;
+        @include center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: rgba($color: #eeaeca, $alpha: 0.8);
         color: $darkBlueColor;
-        font-weight: 600;
+        font-size: rem(18px);
+        font-weight: 700;
         letter-spacing: 0.1rem;
         overflow: hidden;
         transition: transform .5s ease;
@@ -36,13 +45,25 @@
             transform: skewX(-45deg);
         }
         &:hover{
-            &::before{
-                animation: move 1s;
+            &::before {
+                animation: move .7s;
             }
         }
-        &:active {
-            transform: scale(0.9);
+    }
+    &:hover{
+        .card {
+            &__btn{
+                transform: translate(-50%, -50%) scale(1);
+            }
         }
+    }
+    &:active{
+        .card {
+            &__btn{
+                transform: translate(-50%, -50%) scale(0.9);
+            }
+        }
+        
     }
 }
 
